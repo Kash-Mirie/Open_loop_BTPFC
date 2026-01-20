@@ -1,0 +1,24 @@
+# ===== CCS WORKSPACE (DO NOT TRACK) =====
+.metadata/
+
+# ===== CCS BUILD OUTPUTS =====
+Debug/
+Release/
+*/Debug/
+*/Release/
+
+# ===== CCS / TI GENERATED =====
+.settings/
+ccs_debug.log
+*.out
+*.map
+*.hex
+*.obj
+*.d
+*.lst
+
+# ===== OS / EDITOR =====
+*~
+*.swp
+.DS_Store
+.metadata/
