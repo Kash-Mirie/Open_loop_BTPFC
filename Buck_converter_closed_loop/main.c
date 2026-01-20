@@ -1,9 +1,11 @@
+#include "F28x_Project.h"
+#include "initialisation_header.h"
 
-
-/**
- * main.c
- */
 int main(void)
 {
-	return 0;
+    init_sysclk();
+    perip_clocks();
+
+    while(1)
+    {}
 }
