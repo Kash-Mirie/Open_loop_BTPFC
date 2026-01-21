@@ -22,6 +22,7 @@ void gpio_init();         // GPIO initialisation function
 void epwm1_init();
 void db_epwm1_init();
 
+void epwm2_init();        // Both epwm's are down . Using the full bridge as buck converter.
 
 // ============================= ADC modules ==============================================================
 
