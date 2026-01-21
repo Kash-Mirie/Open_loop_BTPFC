@@ -14,20 +14,5 @@ void update_pi_controller(pi_controller *pi ,float v_in , float i_L ,float  v_ou
     pi->error = i_ref - i_L;
 }
 
-void update_dac_vals(uint16_t adcA_16bit, uint16_t adcB_16bit)
 
-{
-    uint16_t dacA, dacB;
-
-    dacA = adcA_16bit >> 4;
-    dacB = adcB_16bit >> 4;
-
-    if (dacA > 4095) dacA = 4095;
-    if (dacB > 4095) dacB = 4095;
-
-    EALLOW;
-    DacaRegs.DACVALS.all = dacA;
-    DacbRegs.DACVALS.all = dacB;
-    EDIS;
-}
 
